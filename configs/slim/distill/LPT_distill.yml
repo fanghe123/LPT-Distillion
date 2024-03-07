@@ -1,0 +1,7 @@
+_BASE_: [
+  'F:\zhengliu\PaddleDetection-develop\123\configs\LPT\rtdetr_hgnetv2_x_6x_coco.yml',
+]
+pretrain_weights: F:\zhengliu\PaddleDetection-develop\123\rtdetr_hgnetv2_x_6x_coco.pdparams
+slim: Distill
+slim_method: DETR
+distill_loss: DistillDino_Loss

@@ -1,0 +1,11 @@
+_BASE_: [
+  '../datasets/coco_detection.yml',
+  '../runtime.yml',
+  '_base_/optimizer_6x.yml',
+  '_base_/LPT_r50vd.yml',
+  '_base_/LPT_reader.yml',
+]
+
+weights: F:\zhengliu\PaddleDetection-develop\123\model.pdparams
+find_unused_parameters: True
+log_iter: 200
